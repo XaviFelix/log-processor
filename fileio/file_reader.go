@@ -7,7 +7,7 @@ import (
 )
 
 func ReadFile(filepath string) error {
-	file, err := os.Open(filepath)
+	file, err := os.Open(filepath) // opens in read-only mode
 
 	if err != nil {
 		return fmt.Errorf("error opening filepath: %w", err)
